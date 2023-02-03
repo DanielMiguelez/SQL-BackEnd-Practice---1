@@ -1,13 +1,10 @@
 const { Post, User, sequelize } = require("../models/index");
 
-
-
-
 const PostController = {
   async createPost(req, res, next) {
     try {
       const post = await Post.create({
-        ...req.body,
+        ...req.body, UserId:req.user.id
       });
 
       res.status(201).send({
