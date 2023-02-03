@@ -21,8 +21,10 @@ const UserController = {
         message: "You created an user",
         user,
       });
-    } catch (err) {
-      next(err);
+    } catch (error) {
+      console.error(error)
+      //res.status(500).send({msg:"error creating user", error})
+      next(error)
     }
   },
 

@@ -8,6 +8,6 @@ router.get("/getPosts", PostController.getPosts )
 router.get("/getPostById/:id", PostController.getPostById )
 router.get('/getOnePostByName/:title', PostController.getOnePostByName)
 router.delete('/deletePost/:id', authentication, isAdmin, PostController.deletePost)
-router.put('/updatePost/:id', PostController.updatePost)
+router.put('/updatePost/:id', authentication, PostController.updatePost)
 
 module.exports = router;
