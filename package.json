@@ -1,0 +1,23 @@
+{
+  "name": "sql-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.1.0",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
